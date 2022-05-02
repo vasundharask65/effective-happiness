@@ -1,0 +1,27 @@
+<div class="layout">
+  <div class="app-container" id="taskList">
+    <h1 class="app-header">{{ title }}</h1>
+    <app-search-bar (searchEvent)="searchTodo($event)"></app-search-bar>
+    <app-selected-todo
+      [selectedTodo]="selectTodo"
+      (selectEvent)="selectedTodo($event)"
+    ></app-selected-todo>
+    <app-add-todo (addEvent)="addTodo($event)"></app-add-todo>
+    <ul class="task-list">
+      <app-list-item
+        *ngFor="let item of todos; index as i"
+        [todo]="item"
+        (deleteEvent)="deleteTodo($event)"
+      ></app-list-item>
+    </ul>
+    <div class="d-flex justify-content-around">
+      <button class="task-list-btn" (click)="allTodos()">All</button>
+      <button class="task-list-btn" (click)="completedTodos()">
+        Completed
+      </button>
+      <button class="task-list-btn" (click)="incompletedTodos()">
+        Incompleted
+      </button>
+    </div>
+  </div>
+</div>

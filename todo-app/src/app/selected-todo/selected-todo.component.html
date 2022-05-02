@@ -1,0 +1,10 @@
+<div class="selected-task" *ngIf="selectedTodo">
+  <h1 class="selected-task-header">Selected task:</h1>
+  <input
+    type="text"
+    autocomplete="off"
+    placeholder="Selected task"
+    class="task-input"
+    [value]="selectedTodo"
+  />
+</div>

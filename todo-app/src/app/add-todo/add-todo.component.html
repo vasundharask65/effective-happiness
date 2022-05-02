@@ -1,0 +1,16 @@
+<div class="add-task">
+  <input
+    type="text"
+    autocomplete="off"
+    placeholder="Add New Task"
+    #newTodo
+    class="task-input"
+  />
+  <input
+    type="submit"
+    value=""
+    class="submit-task"
+    title="Add Task"
+    (click)="addTodo(newTodo.value)"
+  />
+</div>

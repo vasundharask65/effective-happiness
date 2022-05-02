@@ -1,0 +1,17 @@
+<div class="search-task">
+  <input
+    type="text"
+    autocomplete="off"
+    placeholder="What are you looking for?"
+    #searchTodo
+    class="task-input"
+    (keyup)="search(searchTodo.value)"
+  />
+  <input
+    type="submit"
+    value=""
+    class="submit-task"
+    title="search task"
+  />
+</div>
+

@@ -1,0 +1,27 @@
+1. where to place *ngFor="let item of todos" on ul/li? tried and saw how component rendered, expected behaviour must be 
+ul 
+  - li
+  - li
+
+when tried on ul *ngFor="let item of todos"
+ul
+ul
+ul
+
+when tried on li *ngFor="let item of todos" 
+ul 
+   - li 
+   - li
+   - li
+
+2. how to remove element from array? two ways:
+i) using splice (overwrites original array, adds/removes element from array)
+ii) filter
+
+3. placing @import "~bootstrap/dist/css/bootstrap.css"; in app.scss worked but when I gave same path in angular.json did not work. why??
+
+4. how to update data after it is filtered to original array?//found
+
+5. difficulty in communicating between
+child1 -> parent 
+parent -> child

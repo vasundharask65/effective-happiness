@@ -1,0 +1,11 @@
+<li class="task-list-item">
+  <label class="task-list-item-label" (click)="onCompleted(todo)">
+    <!-- <input type="checkbox" /> -->
+    <span (click)="selectedTodo(todo.name)">{{ todo.name }}</span>
+  </label>
+  <span
+    class="delete-btn"
+    title="Delete Task"
+    (click)="deleteTodo(todo)"
+  ></span>
+</li>

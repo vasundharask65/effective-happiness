@@ -1,0 +1,29 @@
+.selected-task-header {
+  font-size: 14px;
+  line-height: 23px;
+  margin: 0 0 12px 0;
+  color: #fff;
+}
+
+.selected-task {
+  height: 40px;
+  font-size: 14px;
+  display: flex;
+  margin-bottom: 1.25rem;
+}
+
+.task-input {
+  border-right: none;
+  width: 100%;
+  padding: 0 4px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  margin-right: 12px;
+  color: #fff;
+  box-shadow: none;
+  border-radius: 0;
+  
+  &:placeholder { color: #fff; }
+}
